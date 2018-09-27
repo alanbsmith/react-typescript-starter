@@ -1,0 +1,13 @@
+$blue: #1a82e2;
+$white: #fff;
+
+button {
+  background: $blue;
+  border: none;
+  border-radius: 2px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 16px;
+  text-transform: capitalize;
+}

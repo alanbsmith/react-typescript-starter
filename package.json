@@ -1,0 +1,30 @@
+{
+  "name": "react-typescript-starter",
+  "version": "0.1.0",
+  "description": "a small starter for using TypeScript with React",
+  "main": "",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d --content-base ./dist"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.0.3",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}
