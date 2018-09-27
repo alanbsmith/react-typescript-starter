@@ -4,28 +4,26 @@ import Button from '../Button';
 
 import './style.scss';
 
-type AppProps = {
+interface AppProps {
   name: string;
-};
+}
 
-type AppState = {
+interface AppState {
   count: number;
-};
-
-type DefaultProps = {
-  name: string;
-};
+}
 
 class App extends React.Component<AppProps, AppState> {
   state = {
     count: 0
   };
 
-  static defaultProps: DefaultProps = {
+  static Button = Button;
+
+  static defaultProps: AppProps = {
     name: 'World'
   };
 
-  handleClick = (e) => {
+  private handleClick = (e) => {
     this.setState((state) => ({ count: state.count + 1 }));
   };
 
@@ -34,6 +32,7 @@ class App extends React.Component<AppProps, AppState> {
       <React.Fragment>
         <h1>Hello, {this.props.name}!</h1>
         <Button count={this.state.count} onClick={this.handleClick} />
+        {this.props.children}
       </React.Fragment>
     );
   }
